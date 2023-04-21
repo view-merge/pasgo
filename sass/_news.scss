@@ -1,0 +1,197 @@
+.news {
+  &-box {
+    h2 {
+      margin: 20px 0 10px 0;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: Roboto-medium;
+      padding-bottom: 12px;
+      .box-text {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        span {
+          color: #000 !important;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #d30606 !important;
+        }
+      }
+    }
+    .box-view-more {
+      color: #d02028;
+      float: right;
+      font-weight: 600;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+  &-menu {
+    display: block;
+    background: transparent;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+    -ms-scroll-chaining: chained;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    .menu-link {
+      width: 100%;
+      overflow: hidden;
+      -webkit-overflow-scrolling: touch;
+      -webkit-overflow-scrolling: auto;
+      -ms-overflow: none;
+      white-space: nowrap;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e3e3e3;
+      padding-left: 0 !important;
+    }
+  }
+  &-info {
+    display: inline-block;
+    clear: both;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: none !important;
+    padding-left: 1rem !important;
+    padding-right: 0 !important;
+    a {
+      color: #343a40;
+    }
+    a:hover {
+      text-decoration: none;
+      color: #343a40;
+    }
+    .border-right-menu {
+      border-right: 1px solid #e3e3e3;
+      padding-left: 1rem;
+    }
+  }
+  &-group {
+    margin-bottom: 0.5rem !important;
+  }
+  &-more {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 0.25rem !important;
+  }
+  &-update {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    h3 {
+      height: 55px !important;
+      font-size: 16px !important;
+      margin-bottom: 0 !important;
+      font-weight: 600;
+      overflow: hidden !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 3 !important;
+      -webkit-box-orient: vertical !important;
+      color: #000000;
+    }
+    h3:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
+    span {
+      color: #1d2124 !important;
+      font-size: 13px;
+    }
+    span.glyphicon {
+      position: relative;
+      top: 1px;
+      color: #1d2124 !important;
+      display: inline-block;
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  &-list {
+    a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  &-post {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+
+    .title-info {
+      height: 5px;
+      width: 5px;
+      background-color: #007bff;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    h4 {
+      font-size: 14.5px;
+      font-weight: 700;
+    }
+    .post-span {
+      font-size: 12.5px;
+      color: #666;
+      line-height: 18px;
+      font-weight: 600;
+    }
+
+    .glyphicon {
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+  &-box {
+    padding-bottom: 40px;
+    .box-view-more {
+      border: 0;
+      color: #d02028;
+      float: left;
+      font-weight: 600;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+}

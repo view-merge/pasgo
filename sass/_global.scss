@@ -1,0 +1,132 @@
+.body {
+  line-height: 18px;
+  font-family: $font;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $color-contents;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: $font;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: $primary-container;
+}
+
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+[class^="pasgo-icon-"],
+[class*="pasgo-icon-"] {
+  display: inline-block;
+  background-image: url(/images/baner-common/mobile-2x-baner.png);
+  background-repeat: no-repeat;
+  background-size: 235px 320px;
+  vertical-align: middle;
+  line-height: 30px;
+  clear: both;
+}
+
+[class^="pasgo-arrow-"],
+[class*="pasgo-arrow-"] {
+  display: inline-block;
+  background-image: url(/images/baner-common/2x-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 235px 320px;
+  vertical-align: middle;
+  line-height: 30px;
+  clear: both;
+}
+
+[class^="pasgo-owl-"],
+[class*="pasgo-owl-"] {
+  display: inline-block;
+  background-image: url(/images/baner-common/2x-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 235px 320px;
+  vertical-align: middle;
+  line-height: 30px;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+main .categories .box._\30 {
+  background-color: #ffebf2;
+}
+
+main .categories .box._\31 {
+  background-color: #e7f6fe;
+}
+
+main .categories .box._\32 {
+  background-color: #e0fffa;
+}
+
+main .categories .box._\33 {
+  background-color: #ffeafe;
+}
+
+main .categories .box._\34 {
+  background-color: #faf2dc;
+}
+
+main .categories .box._\35 {
+  background-color: #ffffdf;
+}
+
+main .categories .box._\36 {
+  background-color: #f6ffeb;
+}
+
+main .categories .box._\37 {
+  background-color: #ebffff;
+}
+
+main .categories .box._\38 {
+  background-color: #edebff;
+}
+
+main .categories .box._\39 {
+  background-color: #ffe0e0;
+}

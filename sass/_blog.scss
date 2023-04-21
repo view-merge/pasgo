@@ -1,0 +1,84 @@
+.blog {
+  &-box {
+    h2 {
+      margin: 20px 0 10px 0;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: Roboto-medium;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 12px;
+      .box-text {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        span {
+          color: #000 !important;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #d30606 !important;
+        }
+      }
+    }
+    .box-view-more {
+      color: #d02028;
+      float: right;
+      font-weight: normal;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+  &-info {
+    margin-bottom: 0.5rem !important;
+  }
+  &-items {
+    padding-left: 0.5rem !important;
+    padding-right: 0.25rem !important;
+    .box-blog {
+      padding-left: 0.25rem !important;
+    }
+    .text-blog {
+      padding-right: 0.5rem !important;
+      padding-left: 0.25rem !important;
+    }
+    a:hover {
+      text-decoration: none !important;
+      background-color: $primary-color;
+      color: $text-hover;
+    }
+  }
+  &-export {
+    border-radius: 6px;
+    padding: 0 5px;
+    height: 40px !important;
+    display: grid !important;
+    align-items: center !important;
+    font-size: 13px !important;
+    border: 1px solid #d6d6d6;
+    background: #eee;
+    color: #343a40;
+    text-decoration: none !important;
+    font-weight: 600;
+  }
+  &-desc {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+
+    text-align: center !important;
+    margin-top: 0.25rem !important;
+    margin: 0 !important;
+  }
+  .tag-blog {
+    border-bottom: 1px solid #e3e3e3;
+  }
+}

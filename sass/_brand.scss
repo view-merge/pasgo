@@ -1,0 +1,171 @@
+.brand {
+  &-box {
+    h2 {
+      margin: 20px 0 10px 0;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: Roboto-medium;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 12px;
+      .box-text {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        span {
+          color: #000 !important;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #d30606 !important;
+        }
+      }
+    }
+    .box-view-more {
+      color: #d02028;
+      float: right;
+      font-weight: normal;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+  // mục này là mục owl carousel
+  .owl-nav-1 {
+    position: relative;
+    display: contents;
+    width: 100%;
+
+    .owl-prev-1 {
+      position: absolute;
+      z-index: 9;
+      top: 40%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: $primary-color;
+    }
+
+    .owl-next-1 {
+      position: absolute;
+      z-index: 9;
+      top: 40%;
+      right: 0;
+      height: 40px;
+      width: 40px;
+      background-color: $primary-color;
+    }
+
+    .pasgo-owl-prev {
+      background-position: -136px -29px;
+      width: 17px;
+      height: 32px;
+    }
+
+    .pasgo-owl-next {
+      background-position: -151px -31px;
+      width: 20px;
+      height: 26px;
+    }
+  }
+  .owl-dots {
+    display: none;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      span {
+        background: #d02028;
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+        border-radius: 30px;
+      }
+    }
+  }
+  &-list {
+    overflow-x: hidden;
+    display: block;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+    .owl-stages {
+      position: relative;
+    }
+    .owl-items {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  &-info {
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    margin-right: 10px;
+    a {
+      color: #333;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    img {
+      border-bottom: 1px solid #eee;
+      min-height: inherit !important;
+      display: block;
+      width: 100%;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #333;
+      height: 70px !important;
+      margin-bottom: 5px !important;
+      padding: 0 5px;
+      overflow: hidden !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 4 !important;
+      -webkit-box-orient: vertical !important;
+    }
+    h3:hover {
+      color: $primary-color;
+    }
+  }
+  &-desc {
+    margin: 10px 5px 10px 5px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-family: Roboto-Medium;
+    .desc-icon {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+    .desc-icon:before {
+      width: 20px;
+      height: 20px;
+      content: "";
+      background-image: url(/images/view-more/sale.jpg);
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      clear: both;
+      background-size: cover;
+      margin-right: 3px;
+    }
+  }
+}

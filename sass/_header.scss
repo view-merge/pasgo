@@ -1,0 +1,103 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  z-index: 20;
+  &-container {
+    background-color: $primary-color;
+    display: flex;
+    padding: 5px;
+  }
+
+  &-info {
+    #openbtn {
+      float: left;
+      display: block;
+      width: 42px;
+      height: 44px;
+      padding-left: 10px;
+      border-right: 1px solid #e6e6e6;
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .pasgo-icon-btn {
+      background-position: -191px -205px;
+      width: 26px;
+      height: 24px;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      height: 44px;
+    }
+
+    .pasgo-icon-logo {
+      background-image: url(/images/nav-menu/logo-pasgo.png);
+      width: 80px;
+      height: 24px;
+      background-size: 70px;
+      margin-top: 10px;
+    }
+  }
+
+  &-province {
+    text-align: center;
+    padding: 0 15px 0 0;
+    font-size: 16px;
+
+    #locate {
+      padding: 0 40px;
+      border: 1px solid $primary-color;
+      outline: 0;
+      height: 30px;
+      background-color: $primary-color;
+      background-image: url(/images/nav-menu/dropdown.png);
+      background-repeat: no-repeat;
+      background-position: top 50% right 2px;
+      border-radius: 0;
+      box-shadow: 0;
+      color: $light-text-color;
+    }
+
+    #locate:hover {
+      box-shadow: none;
+      outline: 0;
+    }
+
+    #locate:active {
+      box-shadow: none;
+      outline: 0;
+      border: 1px solid $primary-color;
+    }
+  }
+
+  &-search {
+    padding: 2px 0 0 8px;
+    text-align: center;
+
+    .pasgo-icon-search {
+      background-position: -204px -100px;
+      width: 25px;
+      height: 29px;
+    }
+  }
+
+  &-user {
+    text-align: center;
+    padding: 0 0 0 10px;
+
+    .pasgo-icon-user {
+      background-image: url(/images/nav-menu/user.png);
+      width: 30px;
+      height: 30px;
+      background-size: 30px;
+      border-radius: 50%;
+    }
+  }
+}
+#navfix .active {
+}

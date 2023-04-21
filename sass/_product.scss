@@ -1,0 +1,305 @@
+.product {
+  &-box {
+    h2 {
+      margin: 20px 0 10px 0;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: Roboto-medium;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 12px;
+      .box-text {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        span {
+          color: #000 !important;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #d30606 !important;
+        }
+      }
+    }
+    .box-view-more {
+      color: #d02028;
+      float: right;
+      font-weight: normal;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+  &-list {
+    display: block;
+    position: relative;
+  }
+
+  .owl-loaded {
+    display: block;
+  }
+
+  .owl-carousel {
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-info {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    // -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  &-info:hover .customer-slider {
+    opacity: 1;
+  }
+
+  &-groups {
+    position: relative;
+  }
+
+  &-list {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    // -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  &-item {
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.5s ease;
+
+    a {
+      display: block;
+      overflow: hidden;
+      padding: 0 0 10px 0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      min-height: 110px;
+      border-radius: 0;
+      display: block;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-family: Roboto-Medium;
+      color: #333;
+      text-align: left;
+      margin: 10px 5px;
+      line-height: 18px;
+      height: 36px;
+      overflow: hidden;
+      font-weight: normal;
+    }
+
+    p {
+      text-align: left;
+      font-size: 13px;
+      color: #555;
+      line-height: 18px;
+      text-overflow: ellipsis;
+      padding: 0 8px;
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 0;
+    }
+  }
+  &-rate {
+    background: rgba(31, 31, 31, 0.8);
+    bottom: 103px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    min-height: 28px;
+    color: #fff;
+    text-align: center;
+    a {
+      display: block;
+      color: #fff;
+      padding: 6px 2px 5px 2px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .rate-start {
+      text-align: right;
+      border-right: 1px solid #696969;
+      .rate-md {
+        font-size: 8px;
+        line-height: 12px;
+        .rate-items {
+          cursor: default;
+          position: relative;
+          vertical-align: middle;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          .empty-stars {
+            color: #aaa;
+            .star {
+              margin: 0 1.8px;
+              display: inline-block;
+              text-align: center;
+              i {
+                font-style: normal;
+              }
+            }
+          }
+          .filled-stars {
+            color: #f7db04;
+          }
+        }
+        .rate-evaluate {
+          cursor: default;
+          position: relative;
+          vertical-align: middle;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+    .rate-dollar {
+      text-align: left;
+      .rate-md {
+        font-size: 8px;
+        line-height: 12px;
+        .rate-items {
+          cursor: default;
+          position: relative;
+          vertical-align: middle;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          .empty-stars {
+            color: #aaa;
+            .star {
+              margin: 0 1.5px;
+              display: inline-block;
+              text-align: center;
+              i {
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    .text-desc-product {
+      padding: 0 5px;
+      color: #c2c2c2;
+      font-size: 11px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-family: Roboto-Regular, Arial, Helvetica, sans-serif;
+      margin: 2px 0 5px 0;
+    }
+  }
+  &-sale {
+    color: #d02028;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &-desc {
+    height: 20px;
+    overflow: hidden;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 4px;
+    color: #757777;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &-booking {
+    clear: both;
+    min-height: 40px;
+    padding: 0 10px;
+    a {
+      padding: 6px 10px;
+      font-size: 13px;
+      text-align: center;
+      border-radius: 20px;
+      border: 1px solid #e0e0e0;
+      text-decoration: none;
+      color: #757777;
+    }
+    a:hover {
+      color: #fff;
+      background-color: $primary-color;
+      text-decoration: none;
+    }
+  }
+
+  &-slider-1 {
+    position: relative;
+    display: contents;
+    width: 100%;
+
+    .arrow-left-1 {
+      position: absolute;
+      z-index: 9;
+      top: 35%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-color: $primary-color;
+    }
+
+    .arrow-right-1 {
+      position: absolute;
+      z-index: 9;
+      top: 35%;
+      right: 0;
+      height: 40px;
+      width: 40px;
+      background-color: $primary-color;
+    }
+
+    .pasgo-arrow-mouseleft-1 {
+      background-position: -136px -29px;
+      width: 17px;
+      height: 32px;
+      // transform: translateX(-50%);
+      // transform: translateY(-50%)
+    }
+
+    .pasgo-arrow-mouseright-1 {
+      background-position: -151px -31px;
+      width: 20px;
+      height: 26px;
+
+      // transform: translateY(-50%);
+      // transform: translateX(-50%)
+    }
+  }
+}

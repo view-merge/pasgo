@@ -1,0 +1,29 @@
+.contact {
+  visibility: visible;
+  cursor: pointer;
+  bottom: 70px !important;
+  position: fixed;
+  text-align: center;
+  z-index: 99;
+  background-color: #fff;
+  width: 40px;
+  min-height: 40px;
+  right: 6px;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.2s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #a7a7a7;
+  &-info {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d02028;
+    display: block;
+    overflow: hidden;
+  }
+  .pasgo-icon-scroll {
+    background-position: -40px -295px;
+    width: 10px;
+    height: 22px;
+    margin-bottom: 5px;
+  }
+}

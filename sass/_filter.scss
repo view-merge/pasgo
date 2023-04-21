@@ -1,0 +1,72 @@
+.filter {
+  padding-top: 50px;
+  .container {
+    background-color: $primary-color;
+    padding: 15px;
+  }
+
+  &-search {
+    display: flex;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+
+    .form-control {
+      width: 90%;
+      height: 36px;
+      background-color: #fff;
+      border: 0;
+      box-shadow: none;
+      text-indent: 10px;
+      padding: 8px;
+      border-radius: 5px 0 0 5px;
+
+      .pasgo-icon-search {
+        background-position: -198px -38px;
+        width: 30px;
+        height: 22px;
+      }
+
+      span {
+        padding: 10px 0 0 0;
+      }
+    }
+  }
+
+  &-check {
+    background: #fff;
+    border: 0;
+    border-left: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 5px;
+
+    &-box {
+      height: 26px;
+      border: 0;
+      width: 50px;
+      margin: 0 6px;
+      color: #fff;
+      padding: 2px 8px;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    &-box:hover {
+      background-color: transparent;
+      color: transparent;
+    }
+
+    &-box:active {
+      background-color: transparent;
+      color: transparent;
+    }
+
+    .pasgo-icon-filter {
+      background-image: url(/images/filter/filter.png);
+      width: 22px;
+      height: 18px;
+      margin-right: 5px;
+      background-size: auto;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        How to hide scroll bar
+        for inactivity?
+    </title>
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150%;
+        }
+    </style>
+</head>
+
+<body onscroll="disableScrolling()" onmousewheel="enableScrolling()" onclick="enableScrolling()"
+    onmousemove="enableScrolling()">
+
+    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191024224332/Geeksforgeeks-Paid-Online-Courses.png"
+        alt="GfG">
+
+    <script>
+
+        // JavaScript code
+        function disableScrolling() {
+            setTimeout(function () {
+                document.body.style.overflow = 'hidden';
+            }, 1000);
+        }
+
+        function enableScrolling() {
+            document.body.style.overflow = '';
+        }
+    </script>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</html>

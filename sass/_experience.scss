@@ -1,0 +1,123 @@
+.experience {
+  &-info {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    img {
+      border-radius: 0;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      float: left;
+      margin-right: 6px;
+      max-width: 130px;
+    }
+    h3 {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+      line-height: 18px;
+      font-weight: 700;
+      height: 50px;
+      overflow: hidden !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 3 !important;
+      -webkit-box-orient: vertical !important;
+    }
+
+    span {
+      font-size: 12.5px;
+      color: #666;
+      line-height: 18px;
+      font-weight: 600;
+    }
+    .glyphicon {
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  &-desc {
+    padding: 0px 5px;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  &-list {
+    a:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+  &-post {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+
+    .title-info {
+      height: 5px;
+      width: 5px;
+      background-color: #007bff;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .post-span {
+      font-size: 12.5px;
+      color: #666;
+      line-height: 18px;
+      font-weight: 600;
+    }
+
+    .glyphicon {
+      position: relative;
+
+      top: 1px;
+      display: inline-block;
+      font-family: "Glyphicons Halflings";
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  .check-bottom {
+    border-bottom: 1px solid #e3e3e3;
+  }
+  &-box {
+    .box-view-more {
+      color: #d02028;
+      float: left;
+      font-weight: 600;
+      position: relative;
+      top: -3px;
+      font-size: 14px;
+      padding: 5px 10px 0 0;
+      .pasgo-icon-more {
+        background-position: -149px -16px;
+        width: 10px;
+        height: 15px;
+      }
+    }
+    .box-view-more:hover {
+      text-decoration: none;
+    }
+  }
+}
