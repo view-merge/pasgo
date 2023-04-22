@@ -8,6 +8,7 @@
   background-color: #29c4ff;
   -webkit-text-size-adjust: 100%;
 }
+2abac4
 
 button {
   cursor: pointer;
@@ -178,6 +179,7 @@ main .categories .box._9 {
   text-align: center;
   padding: 0 15px 0 0;
   font-size: 16px;
+  box-shadow: none;
 }
 .header-province #locate {
   padding: 0 40px;
@@ -189,7 +191,7 @@ main .categories .box._9 {
   background-repeat: no-repeat;
   background-position: top 50% right 2px;
   border-radius: 0;
-  box-shadow: 0;
+  box-shadow: none;
   color: #fff;
 }
 .header-province #locate:hover {
@@ -220,6 +222,20 @@ main .categories .box._9 {
   height: 30px;
   background-size: 30px;
   border-radius: 50%;
+}
+
+.header.active {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+
+#navfix .active {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
 }
 
 .filter {

@@ -48,6 +48,7 @@
     text-align: center;
     padding: 0 15px 0 0;
     font-size: 16px;
+    box-shadow: none;
 
     #locate {
       padding: 0 40px;
@@ -59,7 +60,7 @@
       background-repeat: no-repeat;
       background-position: top 50% right 2px;
       border-radius: 0;
-      box-shadow: 0;
+      box-shadow: none;
       color: $light-text-color;
     }
 
@@ -99,5 +100,16 @@
     }
   }
 }
+.header.active {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+
 #navfix .active {
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
 }
