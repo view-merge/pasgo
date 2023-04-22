@@ -390,6 +390,10 @@ main .categories .box._9 {
   color: #333;
   text-decoration: none;
 }
+.customer-list-items a:hover {
+  text-decoration: none;
+  color: #333;
+}
 .customer-list-items img {
   width: 100%;
   height: auto;
