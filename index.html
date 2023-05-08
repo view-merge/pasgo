@@ -11,27 +11,28 @@
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/owl-carousel/css/owl.carousel.css">
     <link rel="stylesheet" href="/owl-carousel/css/owl.theme.css">
-    <link rel="stylesheet" href="/faviconv2.ico">
+    <link rel="icon" href="/chat-now-green-v1.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+<!-- -->
 
 <body style="overflow-x: hidden;overflow-y: auto;">
     <div class="body-content">
-        <header class="header" id="navfix">
+        <!--Header Top-->
+        <header class="header" id="navFix">
             <div class="container">
                 <div class="row">
                     <div class="header-container">
                         <div class="header-info col-xs-5">
-                            <button onclick="" id="openbtn">
-                                <span class="pasgo-icon-btn"></span>
+                            <button onclick="openMenu()" id="openbtn" class="pasgo-icon-btn">
                             </button>
-                            <a href="" title="logo">
-                                <span class="pasgo-icon-logo" title="logo"></span>
+                            <a href="" title="logo" aria-current="" class="pasgo-icon-logo">
                             </a>
                         </div>
                         <div class="header-province col-xs-3">
-                            <form action="" method="post">
-                                <select class="form-control" name="provinceId" id="locate">
+                            <form action="" method="post" class="desc-space">
+                                <select class="form-control p-9" name="provinceId" id="locate">
                                     <option selected value="1">Hà Nội</option>
                                     <option value="2">Hồ Chí Minh</option>
                                     <option value="3">Đà Nẵng</option>
@@ -40,9 +41,8 @@
                             </form>
                         </div>
                         <div class="header-search col-xs-2">
-                            <span class="search-title" onclick="" title="search">
-                                <i class="pasgo-icon-search" title="search"></i>
-                            </span>
+                            <button onclick="openSearch()" class="pasgo-icon-search" title="search">
+                            </button>
                         </div>
                         <div class="header-user col-xs-2">
                             <a href="" class="user-client" title="account">
@@ -53,18 +53,340 @@
                 </div>
             </div>
         </header>
-        <main>
-            <section class="filter">
+        <!--NavBar -->
+        <div class="navbarleft" id="navMenu">
+            <div class="container">
+                <div class="row">
+                    <div class="navbarleft__header">
+                        <h2>Menu</h2>
+                        <a href="#" class="closebtn" onclick="closeMenu()"><i class='bx bxs-message-square-x'></i></a>
+                    </div>
+                    <div class="navbarleft__content">
+                        <div class="navbarleft__group">
+                            <a href="" class="btn-login">Đăng nhập</a>
+                            <a href="" class="btn-register">Đăng ký</a>
+                        </div>
+                        <div class="navbarleft__collection">Bộ sưu tập</div>
+                        <div class="panel-top">Ăn uống</div>
+                        <div class="panel-menu active">
+                            <a href="">Nhà hàng</a>
+                            <a href="">Lẩu</a>
+                            <a href="">Buffet</a>
+                            <a href="">Hải sản</a>
+                            <a href="">Lẩu & Nướng</a>
+                            <a href="">Quán nhậu</a>
+                            <a href="">Món chay</a>
+                            <a href="">Đặt tiệc</a>
+                            <a href="">Hàn Quốc</a>
+                            <a href="">Nhật Bản</a>
+                            <a href="">Món Âu</a>
+                            <a href="">Món Việt</a>
+                            <a href="">Món Thái</a>
+                            <a href="">Món Trung Hoa</a>
+                            <a href="">Tiệc cưới</a>
+                        </div>
+                        <div class="panel-top">Top điểm đặt chỗ</div>
+                        <div class="panel-menu active">
+                            <a href="">Nhà hàng uy tín</a>
+                            <a href="">Ưu đãi hot</a>
+                            <a href="">Mới nhất</a>
+                        </div>
+                        <div class="panel-top">Khám phá</div>
+                        <div class="panel-menu active">
+                            <a href="">Tất cả</a>
+                            <a href="">Top Buffet</a>
+                            <a href="">Thương hiệu chuỗi</a>
+                            <a href="">Top lẩu nướng</a>
+                            <a href="">Top hải sản</a>
+                            <a href="">Top đặc biệt</a>
+                            <a href="">Top ăn chay</a>
+                            <a href="">Top khu vực</a>
+                            <a href="">Top nhà hàng khác</a>
+                        </div>
+                        <div class="panel-top">Blog Pasgo</div>
+                        <div class="panel-menu active">
+                            <a href="">Tất cả</a>
+                            <a href="">Địa điểm ăn uống</a>
+                            <a href="">Món ngon & Công thức</a>
+                            <a href="">Đặc sản vùng miền</a>
+                            <a href="">Tiệc & Tổ chức tiệc</a>
+                            <a href="">Kinh doanh ăn uống</a>
+                            <a href="">Sức khỏa & Làm đẹp</a>
+                            <a href="">Bên lề ẩm thực</a>
+                            <a href="">Dinh dưỡng</a>
+                        </div>
+                        <div class="panel-top">Tin tức</div>
+                        <div class="panel-menu active">
+                            <a href="">Tất cả</a>
+                            <a href="">Tin Pasgo</a>
+                            <a href="">Tuyển dụng</a>
+                            <a href="">Tin ẩm thực</a>
+                            <a href="">Góc nhìn</a>
+                            <a href="">Về Pasgo</a>
+                            <a href="">Công nghệ thông tin</a>
+                        </div>
+                        <div class="panel-top">Video Pasgo</div>
+                        <div class="panel-menu active">
+                            <a href="">Tất cả</a>
+                            <a href="">Nhà hàng</a>
+                            <a href="">Món ngon</a>
+                            <a href="">Ký sự</a>
+                            <a href="">Chuyện nhặt</a>
+                        </div>
+                        <div class="panel-top">Giới thiệu</div>
+                        <div class="panel-menu active">
+                            <a href="">Những điều thú vị về App Pasgo - Có thể bạn chưa biết</a>
+                            <a href="">Vì sao Pasgo đang phát triển!</a>
+                            <a href="">Hướng dẫn đặt bàn</a>
+                            <a href="">Chính sách bảo mật</a>
+                            <a href="">Khiếu nại</a>
+                            <a href="">Câu hỏi thường gặp</a>
+                            <a href="">Dành cho nhà hàng</a>
+                        </div>
+                    </div>
+                    <div class="navbarleft__footer">
+                        <a href="">
+                            <span>CSKH:</span>
+                            19006005
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Overlay-->
+        <div class="overlay" id="navSearch">
+            <div class="container">
+                <div class="row">
+                    <div class="overlay__search">
+                        <div class="search-group">
+                            <a href="" class="pasgo-icon-arrow-left"></a>
+                            <input type="text" id="" name="search" onclick="" autocapitalize="off"
+                                class="form-control search-check" placeholder="Nhập từ khóa">
+                            <select name="" class="search-locate" id="">
+                                <option selected value="1">Đăt chỗ</option>
+                                <option value="2">Khám phá</option>
+                                <option value="3">Video</option>
+                            </select>
+                            <span class="search-box"><button class="pasgo-icon-search"></button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="overlay__content">
+                        <div class="content-list">
+                            <h3 class="keyword-search">Keyword</h3>
+                            <div class="overlay__list">
+                                <a href="">Buffet</a>
+                                <a href="">Nướng</a>
+                                <a href="">Lẩu</a>
+                                <a href="">Hải sản</a>
+                                <a href="">Caprain Crawfish</a>
+                                <a href="">Sapasa - Nguyễn Huy Tưởng</a>
+                            </div>
+                        </div>
+                        <div class="content-list">
+                            <h3>Nhà hàng</h3>
+                            <div class="overlay-desc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchbox" id="navFilter">
+            <div class="container">
+                <div class="row">
+                    <div class="searchbox__group">
+                        <div class="searchbox__filter">
+                            <a href="/index.html" class="col-xs-2 pasgo-icon-prev"></a>
+                            <span class="col-xs-8">Bộ tìm kiếm</span>
+                            <a href="" class="col-xs-2 pasgo-icon-reverse"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="searchbox__validate">
+                        <form action="method">
+                            <div class="searchbox__info">
+                                <span class="info-text" style="font-size:13px"><span class="pasgo-icon-post"></span>Vị
+                                    trí:</span>
+                                <select name="" id="" class="form-control info-prov">
+                                    <option selected value="0">Hà Nội</option>
+                                    <option value="1">Hồ Chí Minh</option>
+                                    <option value="2">Đà Nẵng</option>
+                                    <option value="2">Khánh Hòa</option>
+                                </select>
+                                <span class="info-desc"><span class="pasgo-icon-arrow-down"></span></span>
+                                <span class="info-box" style="font-size:13px">|</span>
+                                <span class="info-area" style="font-size:13px">Khu vực:</span>
+                                <select id="" name="" class="form-control info-all-prov">
+                                    <option selected value="0">Tất cả</option>
+                                    <option value="1">Ba Đình</option>
+                                    <option value="2">Thanh Xuân</option>
+                                    <option value="3">Tây Hồ</option>
+                                    <option value="4">Cầu Giấy</option>
+                                    <option value="5">Đống Đa</option>
+                                    <option value="6">Hà Đông</option>
+                                    <option value="7">Hai Bà Trưng</option>
+                                    <option value="8">Hoàn Kiếm</option>
+                                    <option value="9">Hoàng Mai</option>
+                                    <option value="10">Long Biên</option>
+                                    <option value="11">Nam Từ Liêm</option>
+                                    <option value="12">Bắc Từ Liêm</option>
+                                    <option value="13">Huyện Đan Phượng</option>
+                                    <option value="14">Huyện Đông Anh</option>
+                                    <option value="15">Huyện Gia Lâm</option>
+                                    <option value="16">Huyện Hoài Đức</option>
+                                    <option value="17">Huyện Sóc Sơn</option>
+                                    <option value="18">Huyện Thanh Trì</option>
+                                    <option value="19">Huyện Thường Tín</option>
+                                    <option value="20">Huyện Quốc Oai</option>
+                                    <option value="21">Thị xã Sơn Tây</option>
+                                </select>
+                                <span class="info-desc"><span class="pasgo-icon-arrow-down"></span></span>
+                            </div>
+                            <div class="search-categories">
+                                <div class="panel-list">Ngành hàng</div>
+                                <div class="panel-list-item">
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Nhà hàng</label>
+                                        <input type="radio" id="nha-hang" class="form-check-input">
+                                    </div>
+                                </div>
+                                <div class="panel-list">Giá trung bình (5)</div>
+                                <div class="panel-list-item">
+                                    <div class="form-check">
+                                        <label for="price" class="form-check-label">
+                                            < 150k</label>
+                                                <input type="checkbox" id="price" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="price1" class="form-check-label">
+                                            < 150k</label>
+                                                <input type="checkbox" id="price1" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="price2" class="form-check-label">
+                                            < 150k</label>
+                                                <input type="checkbox" id="price2" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="price3" class="form-check-label">
+                                            < 150k</label>
+                                                <input type="checkbox" id="price3" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="price4" class="form-check-label">
+                                            < 150k</label>
+                                                <input type="checkbox" id="price4" class="form-check-input">
+                                    </div>
+                                </div>
+                                <div class="panel-list">Phù hợp (20)</div>
+                                <div class="panel-list-item">
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Tiệc/ Hội nghị</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Hiện đại</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Truyền thông</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Sang trọng</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Cổ điển</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Phòng cách Nhật - Hàn</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Thiên nhiên</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Sân vườn</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Ăn gia đình</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Hẹn hò</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Đặt tiệc</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Họp nhóm</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Tiếp khách</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Sinh nhật</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Hội thảo</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Tiệc cưới</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Dã ngoại</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Tiệc ngoài trời</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Tiệc tận nơi</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="nha-hang" class="form-check-label">Món Nhật</label>
+                                        <input type="checkbox" id="nha-hang" class="form-check-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="searchbox__result">
+                        <button class="btn btn-danger bg-color-red">Lọc kết quả</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="navContent">
+            <!--Lọc item list-->
+            <section class=" filter" id="nav-filter">
                 <div class="container">
                     <div class="row">
                         <h1 class="" style="display: none;"></h1>
                         <div class="filter-container col-xs-12">
                             <div class="filter-search">
-                                <span class="form-control" onclick="" title="Tìm kiếm địa chỉ">
+                                <span class="form-control" onclick="openSearch()" title="Tìm kiếm địa chỉ">
                                     <i class="pasgo-icon-search"></i>
                                     <span>Tìm kiếm địa chỉ......</span>
                                 </span>
-                                <a href="" class="filter-check" title="lọc mặt địa chỉ">
+                                <a href="/pages/research.html" class="filter-check" title="lọc mặt địa chỉ">
                                     <span class="filter-check-box" type="button">
                                         <i class="pasgo-icon-filter"></i>
                                     </span>
@@ -74,6 +396,7 @@
                     </div>
                 </div>
             </section>
+            <!--Danh sách mặt hàng list-->
             <section class="categories">
                 <div class="container">
                     <div class="row">
@@ -3685,7 +4008,8 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="navFooter">
+            <!--footer bottom-->
             <div class="container">
                 <div class="row">
                     <div class="footer-hotline col-xs-12">
@@ -3710,7 +4034,8 @@
                                 <a href="https://pasgo.vn/huong-dan" target="_blank">Hướng dẫn đặt bàn</a>
                             </li>
                             <li>
-                                <a href="https://pasgo.vn/chinh-sach-bao-ve-thong-tin" target="_blank">Chính sách bảo
+                                <a href="https://pasgo.vn/chinh-sach-bao-ve-thong-tin" target="_blank">Chính sách
+                                    bảo
                                     mật</a>
                             </li>
                         </ul>
@@ -3753,6 +4078,7 @@
                 </div>
             </div>
         </footer>
+        <!--back top-->
         <div class="contact" id="backtop">
             <span class="contact-info">
                 <span class="pasgo-icon-scroll"></span>
@@ -3788,7 +4114,8 @@
                                                 <img class="direct-chat-img"
                                                     src="https://pasgo.vn//Assets/Images/Chat/icon-pasgo.png">
                                                 <div class="direct-chat-text">
-                                                    PasGo xin chào! PasGo là Mạng lưới hơn 1000 nhà hàng ngon, nổi tiếng
+                                                    PasGo xin chào! PasGo là Mạng lưới hơn 1000 nhà hàng ngon, nổi
+                                                    tiếng
                                                     tại Hà Nội, Sài Gòn, Đà Nẵng giúp
                                                     Bạn đặt bàn dễ dàng, nhận kèm ưu đãi miễn phí!
                                                 </div>
@@ -3853,13 +4180,13 @@
 <script src="/js/jquery/jquery-1.9.1.js"></script>
 <script src="/js/jquery/jquery-migrate-1.1.0.js"></script>
 <script src="/owl-carousel/js/owl.carousel.js"></script>
-<script type="text/javascript" src="/js/javascript/animate-owl-carousel.js"></script>
-<script type="text/javascript" src="/js/javascript/animate-scroll.js"></script>
+
+
+<script type="text/javascript" src="/js/javascript/script-carousel.js"></script>
+<script type="text/javascript" src="/js/javascript/script-scroll.js"></script>
+<script src="/js/javascript/script-navbar.js"></script>
+
 <script src="/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<!-- <script type="text/javascript" src="/js/jquery/jquery-3.6.4.js"></script> -->
-<!-- <script type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="/js/jquery/query-migrate-1.2.1.min.js"></script> -->
 
 </html>

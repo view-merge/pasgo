@@ -3,6 +3,9 @@
 @import "variables";
 @import "global";
 @import "header";
+@import "navbar";
+@import "overlay";
+@import "searchbox";
 @import "filter";
 @import "categories";
 @import "customer";
@@ -17,3 +20,4 @@
 @import "inbox";
 @import "footer";
 // sass ./sass/common.scss ./css/common.css --watch
+// splide__pagination__page  is-active

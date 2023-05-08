@@ -1,0 +1,179 @@
+.searchbox {
+  display: none;
+  .container {
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    clear: both;
+  }
+  &__group {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+  }
+  &__filter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: #ddd;
+    .pasgo-icon-prev {
+      background-position: -47px -147px;
+      height: 25px;
+      width: 25px;
+      margin: 4px 8px;
+    }
+    span {
+      text-align: center;
+      font-style: 16px;
+      font-weight: bold;
+      margin: 2px 8px;
+    }
+    .pasgo-icon-reverse {
+      background-position: -129px -282px;
+      height: 28px;
+      width: 28px;
+      margin: 4px 8px;
+    }
+  }
+
+  &__validate {
+    overflow-y: scroll;
+    position: relative;
+    overflow-x: hidden;
+    margin: 10px;
+    .search-categories {
+      margin-top: 15px;
+      .panel-list {
+        text-transform: uppercase;
+        color: #666;
+        font-style: 30px;
+        font-weight: bold;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+      }
+      .panel-list::before {
+        content: "\002B";
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-right: 5px;
+      }
+      .panel-list.active::before {
+        content: "\2212";
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-right: 5px;
+      }
+      .panel-list-item {
+        display: none;
+        width: 100%;
+        .form-check {
+          padding: 5px 12px 0px 5px;
+          display: inline-block;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          color: black;
+          width: 100%;
+          .form-check-label {
+            float: left;
+          }
+          .form-check-input {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    padding: 0 10px 0 10px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    .info-text {
+      width: 15%;
+      padding-top: 3px;
+    }
+
+    .pasgo-icon-post {
+      background-position: 0px -170px;
+      height: 20px;
+      width: 20px;
+    }
+    .info-desc {
+      width: 5%;
+      margin: 0;
+      padding: 0;
+    }
+    .pasgo-icon-arrow-down {
+      background-position: -106px -15px;
+      height: 18px;
+      width: 15px;
+    }
+    .info-prov {
+      width: 25%;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      padding-right: 20px;
+      border-radius: 0;
+      background-color: $white-color;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      color: red;
+    }
+
+    .info-box {
+      width: 5%;
+      padding-left: 5px;
+      text-align: left;
+    }
+    .info-area {
+      border: none;
+      width: 15%;
+      text-align: left;
+    }
+    .info-all-prov {
+      width: 30%;
+      outline: none;
+      border: none;
+      padding: 0 20px;
+      appearance: none;
+      color: red;
+    }
+  }
+  &__result {
+    position: relative;
+    bottom: 0px;
+    display: block;
+    height: auto;
+    width: 680px;
+    margin-top: 20px;
+    margin: 0;
+    button {
+      width: 100%;
+      border-radius: 30px;
+      height: 40px;
+      font-style: 30px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      background-color: red;
+    }
+    button:hover {
+      background-color: red;
+    }
+  }
+}

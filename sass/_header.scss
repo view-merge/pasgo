@@ -1,22 +1,24 @@
 .header {
+  transition: all 0.3s;
   position: fixed;
-  top: 0;
   left: 0;
   right: 0;
   transition: all 0.5s ease;
   z-index: 20;
+
   &-container {
     background-color: $primary-color;
     display: flex;
-    padding: 5px;
+    line-height: 40px;
   }
 
   &-info {
+    padding: 10px 0px 0 10px;
     #openbtn {
       float: left;
-      display: block;
       width: 42px;
       height: 44px;
+      margin: 10px 0 0 10px;
       padding-left: 10px;
       border-right: 1px solid #e6e6e6;
       background-color: transparent;
@@ -27,10 +29,10 @@
       background-position: -191px -205px;
       width: 26px;
       height: 24px;
+      margin-top: 10px;
     }
 
     a {
-      display: block;
       text-align: center;
       height: 44px;
     }
@@ -40,44 +42,31 @@
       width: 80px;
       height: 24px;
       background-size: 70px;
-      margin-top: 10px;
+      margin: 5px 0px 0px 20px;
     }
   }
 
   &-province {
-    text-align: center;
-    padding: 0 15px 0 0;
-    font-size: 16px;
-    box-shadow: none;
+    padding: 5px 15px 0px 0px;
 
     #locate {
-      padding: 0 40px;
-      border: 1px solid $primary-color;
-      outline: 0;
-      height: 30px;
-      background-color: $primary-color;
+      border: 1px solid $red-color;
+      background-color: $red-color;
       background-image: url(/images/nav-menu/dropdown.png);
       background-repeat: no-repeat;
       background-position: top 50% right 2px;
+      appearance: none;
+      border: none;
+      outline: 0;
+      box-shadow: none;
+      height: 44px;
       border-radius: 0;
-      box-shadow: none;
-      color: $light-text-color;
-    }
-
-    #locate:hover {
-      box-shadow: none;
-      outline: 0;
-    }
-
-    #locate:active {
-      box-shadow: none;
-      outline: 0;
-      border: 1px solid $primary-color;
+      color: $white-color;
     }
   }
 
   &-search {
-    padding: 2px 0 0 8px;
+    padding: 10px 0 0 10px;
     text-align: center;
 
     .pasgo-icon-search {
@@ -89,7 +78,7 @@
 
   &-user {
     text-align: center;
-    padding: 0 0 0 10px;
+    padding: 10px 0 0 10px;
 
     .pasgo-icon-user {
       background-image: url(/images/nav-menu/user.png);
@@ -99,17 +88,4 @@
       border-radius: 50%;
     }
   }
-}
-.header.active {
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-}
-
-#navfix .active {
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
 }

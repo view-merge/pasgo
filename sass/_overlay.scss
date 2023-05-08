@@ -1,0 +1,105 @@
+.overlay {
+  display: none;
+  .container {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    clear: both;
+    transition: all 0.5s;
+  }
+  &__search {
+    background-color: #f6f6f6;
+    padding: 10px 5px;
+    border: 1px solid #eee;
+    .search-group {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #e2dbdb;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 30px;
+      .pasgo-icon-arrow-left {
+        background-position: -55px -128px;
+        height: 20px;
+        width: 35px;
+        margin: 8px;
+        outline: none;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 30px 0px 0px 30px;
+      }
+      .search-check {
+        outline: none;
+        border: none;
+        border-left: 1px solid #e2dbdb;
+        border-right: 1px solid #e2dbdb;
+      }
+      .form-control {
+        border-radius: 0;
+      }
+      .search-locate {
+        color: green;
+        font-size: 14px;
+        border: none;
+      }
+      .search-box {
+        height: 35px;
+        padding: 5px 2px;
+        border-left: 1px solid #e2dbdb;
+      }
+      .pasgo-icon-search {
+        background-position: -198px -38px;
+        width: 30px;
+        height: 22px;
+        border-radius: 30px 0px 0px 30px;
+      }
+    }
+  }
+  &__content {
+    h3 {
+      font-weight: normal;
+      text-align: left;
+      font-style: 10px;
+      text-transform: uppercase;
+      padding: 10px 10px;
+      margin: 0;
+      background-color: #f1f1f1;
+      color: #b4b4b4;
+    }
+    .overlay__list {
+      height: auto;
+      width: 100%;
+      background-color: #ffffff;
+      a {
+        display: inline-block;
+        font-style: 8px;
+        font-weight: normal;
+        padding: 10px 15px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid #e2dbdb;
+      }
+      a:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  &__desc {
+    height: 300px;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+}

@@ -1,8 +1,9 @@
 .filter {
-  padding-top: 50px;
+  padding-top: 48px;
   .container {
     background-color: $primary-color;
     padding: 15px;
+    width: 100%;
   }
 
   &-search {
@@ -36,6 +37,7 @@
   &-check {
     background: #fff;
     border: 0;
+    width: 20%;
     border-left: 1px solid #fff;
     border-radius: 0 5px 5px 0;
     padding: 5px 5px;
@@ -43,6 +45,7 @@
     &-box {
       height: 26px;
       border: 0;
+      float: right;
       width: 50px;
       margin: 0 6px;
       color: #fff;
